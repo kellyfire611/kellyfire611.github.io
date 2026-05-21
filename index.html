@@ -1,396 +1,1026 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="vi">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dương Nguyễn Phú Cường - Portfolio</title>
+  <meta name="description" content="Trang giới thiệu cá nhân của Dương Nguyễn Phú Cường, Trưởng nhóm Lập trình G2B, Founder NenTang.vn." />
 
-    <title>Portal 1</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dương Nguyễn Phú Cường - Portfolio" />
+  <meta property="og:description" content="Trưởng nhóm Lập trình G2B, Founder NenTang.vn" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kellyfire611.github.io" />
+  <meta property="og:image" content="assets/img/hero-anime.svg" />
 
-    <!-- Bootstrap 4 CSS. This is for the alpha 3 release of Bootstrap 4. This should be updated when Bootstrap 4 is officially released. -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 
-    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
-    <link href="css/custom.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-    <!-- For icons -->
-    <link href="css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav id="topNav" class="navbar navbar-full navbar-static-top navbar-dark bg-inverse m-b-1">
-        <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse"
-            data-target="#navbar">
-            &#9776;
-        </button>
-        <a class="navbar-brand" href="#">Logo</a>
-        <div class="collapse navbar-toggleable-sm" id="navbar">
-            <ul class="nav navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Services
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Engage</a>
-                        <a class="dropdown-item" href="#">Pontificate</a>
-                        <a class="dropdown-item" href="#">Synergize</a>
-                    </div>
-                </li>
-            </ul>
-            <!-- Search -->
-            <form class="form-inline pull-xs-right">
-                <input class="form-control" type="text" placeholder="Search">
-                <button class="btn btn-secondary" type="submit">Search</button>
-            </form>
 
-            </ul>
-        </div>
+  <!-- ============================================================
+       HEADER / NAVBAR
+  ============================================================ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <i class="fa-solid fa-code"></i>
+        <span>DNPCuong</span>
+      </a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li class="nav__item"><a href="#hero"         class="nav__link active">Trang chủ</a></li>
+        <li class="nav__item"><a href="#about"        class="nav__link">Giới thiệu</a></li>
+        <li class="nav__item"><a href="#experience"   class="nav__link">Kinh nghiệm</a></li>
+        <li class="nav__item"><a href="#projects"     class="nav__link">Dự án</a></li>
+        <li class="nav__item"><a href="#platforms"    class="nav__link">Nền tảng</a></li>
+        <li class="nav__item"><a href="#publications" class="nav__link">Bài báo</a></li>
+        <li class="nav__item"><a href="#contact"      class="nav__link">Liên hệ</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn--primary nav__cta">
+        <i class="fa-solid fa-envelope"></i> Liên hệ ngay
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
+  </header>
 
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__blob hero__blob--1"></div>
+    <div class="hero__blob hero__blob--2"></div>
+    <div class="hero__blob hero__blob--3"></div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Left Column -->
-            <div class="col col-sm-3">
-
-                <!-- List-Group Panel -->
-                <div class="card">
-                    <div class="card-header p-b-0">
-                        <h5 class="card-title"><i class="fa fa-random" aria-hidden="true"></i> Completely Synergize</h5>
-                    </div>
-                    <div class="list-group list-group-flush">
-                        <a href="#" class="list-group-item list-group-item-action">Resource Taxing</a>
-                        <a href="#" class="list-group-item list-group-item-action">Premier Niche Markets</a>
-                        <a href="#" class="list-group-item list-group-item-action">Dynamically Innovate</a>
-                        <a href="#" class="list-group-item list-group-item-action">Objectively Innovate</a>
-                        <a href="#" class="list-group-item list-group-item-action">Proactively Envisioned</a>
-                    </div>
-                </div>
-
-                <!-- Text Panel -->
-                <div class="card">
-                    <div class="card-header p-b-0">
-                        <h5 class="card-title"><i class="fa fa-cog" aria-hidden="true"></i> Dramatically Engage</h5>
-                    </div>
-
-                    <div class="card-block">
-                        <p class="card-text">Objectively innovate empowered manufactured products whereas parallel
-                            platforms. Holisticly predominate extensible testing procedures for reliable supply chains.
-                            Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.</p>
-                        <p><button class="btn btn-secondary">Engage</button></p>
-                    </div>
-                </div>
-
-                <!-- Text Panel -->
-                <div class="card">
-                    <div class="card-header p-b-0">
-                        <h5 class="card-title">
-                            <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                            Active Predomination
-                        </h5>
-                    </div>
-                    <div class="card-block">
-                        <p class="card-text">Proactively envisioned multimedia based expertise and cross-media growth
-                            strategies.</p>
-                        <div class="btn-group btn-group-sm" role="group">
-                            <button type="button" class="btn btn-secondary">Resource</button>
-                            <button type="button" class="btn btn-secondary">Envision</button>
-                            <button type="button" class="btn btn-secondary">Niche</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!--/Left Column-->
-
-
-            <!-- Center Column -->
-            <div class="col col-sm-6">
-
-                <!-- Alert -->
-                <div class="alert alert-success alert-dismissible" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                    <strong>Synergize:</strong> Seamlessly visualize quality intellectual capital!
-                </div>
-
-                <!-- Articles -->
-                <div class="row">
-                    <article class="col col-xs-12">
-                        <h2>Premier Niche Markets</h2>
-                        <p>Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively
-                            coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely
-                            pursue scalable customer service through sustainable potentialities.</p>
-                        <p><button class="btn btn-outline-success">Read More</button></p>
-                        <p class="pull-right"><span class="tag tag-default">keyword</span> <span
-                                class="tag tag-default">tag</span> <span class="tag tag-default">post</span></p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="#">Today</a></li>
-                            <li class="list-inline-item"><a href="#"><span class="glyphicon glyphicon-comment"></span> 2
-                                    Comments</a></li>
-                            <li class="list-inline-item"><a href="#"><span class="glyphicon glyphicon-share"></span> 8
-                                    Shares</a></li>
-                        </ul>
-                    </article>
-                </div>
-                <hr>
-                <div class="row">
-                    <article class="col col-xs-12">
-                        <h2>Proactively Envisioned</h2>
-                        <p>Seamlessly visualize quality intellectual capital without superior collaboration and
-                            idea-sharing. Holistically pontificate installed base portals after maintainable products.
-                            Proactively envisioned multimedia based expertise and cross-media growth strategies.</p>
-                        <p><button class="btn btn-outline-primary">Read More</button></p>
-                        <p class="pull-right"><span class="tag tag-default">keyword</span> <span
-                                class="tag tag-default">tag</span> <span class="tag tag-default">post</span></p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="#">Yesterday</a></li>
-                            <li class="list-inline-item"><a href="#"><span class="glyphicon glyphicon-comment"></span>
-                                    21
-                                    Comments</a></li>
-                            <li class="list-inline-item"><a href="#"><span class="glyphicon glyphicon-share"></span> 36
-                                    Shares</a></li>
-                        </ul>
-                    </article>
-                </div>
-                <hr>
-                <div class="row">
-                    <article class="col col-xs-12">
-                        <h2>Completely Synergize</h2>
-                        <p>Completely synergize resource taxing relationships via premier niche markets. Professionally
-                            cultivate one-to-one customer service with robust ideas. Dynamically innovate
-                            resource-leveling
-                            customer service for state of the art customer service.</p>
-                        <p><button class="btn btn-outline-danger">Read More</button></p>
-                        <p class="pull-right"><span class="tag tag-default">keyword</span> <span
-                                class="tag tag-default">tag</span> <span class="tag tag-default">post</span></p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="#">2 Days Ago</a></li>
-                            <li class="list-inline-item"><a href="#"><span class="glyphicon glyphicon-comment"></span>
-                                    12
-                                    Comments</a></li>
-                            <li class="list-inline-item"><a href="#"><span class="glyphicon glyphicon-share"></span> 18
-                                    Shares</a></li>
-                        </ul>
-                    </article>
-                </div>
-                <hr>
-            </div>
-            <!--/Center Column-->
-
-
-            <!-- Right Column -->
-            <div class="col col-sm-3">
-
-                <!-- Form -->
-                <div class="card">
-                    <div class="card-header p-b-0">
-                        <h5 class="card-title">
-                            <i class="fa fa-sign-in" aria-hidden="true"></i>
-                            Log In
-                        </h5>
-                    </div>
-                    <div class="card-block">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="uid" name="uid" placeholder="Username">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Log In</button>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- Progress Bars -->
-                <div class="card">
-                    <div class="card-header p-b-0">
-                        <h5 class="card-title">
-                            <i class="fa fa-tachometer" aria-hidden="true"></i>
-                            Dramatically Engage
-                        </h5>
-                    </div>
-                    <div class="card-block">
-                        <div class="text-xs-center" id="progress-caption-1">Proactively Envisioned &hellip; 100%</div>
-                        <progress class="progress progress-success" value="100" max="100"
-                            aria-describedby="progress-caption-1"></progress>
-                        <div class="text-xs-center" id="progress-caption-2">Objectively Innovated &hellip; 80%</div>
-                        <progress class="progress progress-info" value="80" max="100"
-                            aria-describedby="progress-caption-2"></progress>
-                        <div class="text-xs-center" id="progress-caption-3">Portalled &hellip; 45%</div>
-                        <progress class="progress progress-warning" value="45" max="100"
-                            aria-describedby="progress-caption-3"></progress>
-                        <div class="text-xs-center" id="progress-caption-4">Done &hellip; 35%</div>
-                        <progress class="progress progress-danger" value="35" max="100"
-                            aria-describedby="progress-caption-4"></progress>
-                    </div>
-                </div>
-
-                <!-- Carousel -->
-                <h4><i class="fa fa-language" aria-hidden="true"></i> Synergization</h4>
-                <div id="side-carousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#side-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#side-carousel" data-slide-to="1"></li>
-                        <li data-target="#side-carousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <a href="#">
-                                <img class="img-responsive" data-src="holder.js/400x300?bg=FF8C00&text=Image%201"
-                                    alt="">
-                            </a>
-                            <div class="carousel-caption">
-                                <h3>Dramatically Engage</h3>
-                                <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#">
-                                <img class="img-responsive" data-src="holder.js/400x300?bg=FF8C00&text=Image%202"
-                                    alt="">
-                            </a>
-                            <div class="carousel-caption">
-                                <h3>Efficiently Unleash</h3>
-                                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#">
-                                <img class="img-responsive" data-src="holder.js/400x300?bg=FF8C00&text=Image%203"
-                                    alt="">
-                            </a>
-                            <div class="carousel-caption">
-                                <h3>Proactively Pontificate</h3>
-                                <p>Holistically pontificate installed base portals after maintainable products.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="left carousel-control" href="#side-carousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#side-carousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-
-            </div>
-            <!--/Right Column -->
+    <div class="container hero__container">
+      <!-- Left: Content -->
+      <div class="hero__content" data-aos="fade-right" data-aos-duration="800">
+        <p class="hero__greeting">
+          <span class="hero__wave">👋</span> Xin chào, tôi là
+        </p>
+        <h1 class="hero__name">
+          Dương Nguyễn<br /><span class="hero__highlight">Phú Cường</span>
+        </h1>
+        <div class="hero__role">
+          <span class="hero__role-prefix">/ </span>
+          <span id="typing-text" class="hero__typing"></span>
+          <span class="hero__cursor">|</span>
         </div>
+        <p class="hero__desc">
+          Trưởng nhóm Lập trình G2B tại <strong>Trung tâm Công nghệ Phần mềm – Đại học Cần Thơ</strong>.
+          Hơn 10 năm kinh nghiệm lập trình web, đào tạo và phát triển hệ thống phần mềm.
+          Founder <a href="https://nentang.vn" target="_blank" class="hero__link">NenTang.vn</a>.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary btn--lg">
+            <i class="fa-solid fa-rocket"></i> Xem dự án
+          </a>
+          <a href="#contact" class="btn btn--outline btn--lg">
+            <i class="fa-solid fa-paper-plane"></i> Liên hệ với tôi
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Illustration + Badges -->
+      <div class="hero__visual" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+        <div class="hero__image-wrapper">
+          <img src="assets/img/hero-anime.svg" alt="Developer Illustration" class="hero__illustration" />
+          <div class="hero__image-glow"></div>
+        </div>
+
+        <div class="badge badge--float badge--top-left" data-aos="zoom-in" data-aos-delay="600">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <span class="badge__number">10+</span>
+            <span class="badge__label">Năm Kinh Nghiệm</span>
+          </div>
+        </div>
+
+        <div class="badge badge--float badge--top-right" data-aos="zoom-in" data-aos-delay="700">
+          <i class="fa-solid fa-globe"></i>
+          <div>
+            <span class="badge__label">Founder</span>
+            <span class="badge__number">NenTang.vn</span>
+          </div>
+        </div>
+
+        <div class="badge badge--float badge--bottom-left" data-aos="zoom-in" data-aos-delay="800">
+          <i class="fa-solid fa-code"></i>
+          <div>
+            <span class="badge__number">Web</span>
+            <span class="badge__label">Developer</span>
+          </div>
+        </div>
+
+        <div class="badge badge--float badge--bottom-right" data-aos="zoom-in" data-aos-delay="900">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div>
+            <span class="badge__number">Trainer</span>
+            <span class="badge__label">&amp; Educator</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--/container-fluid-->
 
-    <footer>
-        <div class="footer-blurb">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-sm-3 footer-blurb-item">
-                        <h3><i class="fa fa-text-height" aria-hidden="true"></i> Dynamic</h3>
-                        <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
-                            procrastinate B2C users after installed base benefits. Dramatically visualize customer
-                            directed convergence without revolutionary ROI.</p>
-                        <p><a class="btn btn-primary" href="#">Procrastinate</a></p>
-                    </div>
-                    <div class="col col-sm-3 footer-blurb-item">
-                        <h3><i class="fa fa-wrench" aria-hidden="true"></i> Efficient</h3>
-                        <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently
-                            unleash cross-media information without cross-media value. Quickly maximize timely
-                            deliverables for real-time schemas. </p>
-                        <p><a class="btn btn-success" href="#">Unleash</a></p>
-                    </div>
-                    <div class="col col-sm-3 footer-blurb-item">
-                        <h3><i class="fa fa-paperclip" aria-hidden="true"></i> Complete</h3>
-                        <p>Professionally cultivate one-to-one customer service with robust ideas. Completely synergize
-                            resource taxing relationships via premier niche markets. Dynamically innovate
-                            resource-leveling customer service for state of the art customer service.</p>
-                        <p><a class="btn btn-primary" href="#">Complete</a></p>
-                    </div>
-                    <div class="col col-sm-3 footer-blurb-item">
+    <a href="#about" class="hero__scroll-down" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
 
-                        <!-- Thumbnails -->
-                        <h3><i class="fa fa-camera" aria-hidden="true"></i> Phosfluorescent</h3>
-                        <div class="row">
-                            <div class="col col-xs-6 col-md-6">
-                                <a href="#" class="img-fluid">
-                                    <img data-src="holder.js/110x80?theme=vine" alt="">
-                                </a>
-                            </div>
-                            <div class="col col-xs-6 col-md-6">
-                                <a href="#" class="img-fluid">
-                                    <img data-src="holder.js/110x80?theme=sky" alt="">
-                                </a>
-                            </div>
-                            <div class="col col-xs-6 col-md-6">
-                                <a href="#" class="img-fluid">
-                                    <img data-src="holder.js/110x80?theme=sky" alt="">
-                                </a>
-                            </div>
-                            <div class="col col-xs-6 col-md-6">
-                                <a href="#" class="img-fluid">
-                                    <img data-src="holder.js/110x80?theme=vine" alt="">
-                                </a>
-                            </div>
-                        </div>
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__tag">Giới thiệu</span>
+        <h2 class="section__title">Về <span class="highlight">Tôi</span></h2>
+        <p class="section__subtitle">Đam mê lập trình, giảng dạy và xây dựng sản phẩm công nghệ</p>
+      </div>
 
-                    </div>
-
-                </div>
-                <!-- /.row -->
-            </div>
+      <div class="about__grid">
+        <!-- Image column -->
+        <div class="about__image-col" data-aos="fade-right">
+          <div class="about__image-wrapper">
+            <img src="assets/img/workspace.svg" alt="Workspace" class="about__image" />
+          </div>
+          <div class="about__info-tags">
+            <span class="info-tag"><i class="fa-solid fa-map-marker-alt"></i> Cần Thơ, Việt Nam</span>
+            <span class="info-tag"><i class="fa-solid fa-calendar"></i> Kinh nghiệm từ 2013</span>
+            <span class="info-tag"><i class="fa-brands fa-github"></i> kellyfire611</span>
+          </div>
         </div>
 
-        <div class="small-print">
-            <div class="container">
-                <p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
-                <p>Copyright &copy; Example.com 2015 </p>
+        <!-- Content column -->
+        <div class="about__content-col" data-aos="fade-left">
+          <p class="about__lead">
+            Tôi là <strong>Dương Nguyễn Phú Cường</strong>, hiện đang công tác tại
+            <strong>Trung tâm Công nghệ Phần mềm – Đại học Cần Thơ</strong> với vai trò
+            Trưởng nhóm Lập trình G2B.
+          </p>
+          <p class="about__text">
+            Với hơn 10 năm kinh nghiệm trong lĩnh vực phát triển phần mềm, tôi đã tham gia
+            nhiều dự án đa dạng từ hệ thống quản lý, thương mại điện tử đến nền tảng học tập
+            trực tuyến. Tôi luôn nỗ lực kết hợp kỹ thuật hiện đại với trải nghiệm người dùng
+            tốt nhất.
+          </p>
+          <p class="about__text">
+            Ngoài lập trình, tôi còn đam mê giảng dạy và đã hỗ trợ hơn 1000+ học viên học
+            lập trình. Tôi là Founder của
+            <a href="https://nentang.vn" target="_blank">NenTang.vn</a> – nền tảng học lập
+            trình trực tuyến dành cho người Việt.
+          </p>
+
+          <div class="about__cards">
+            <div class="about__card" data-aos="fade-up" data-aos-delay="100">
+              <div class="about__card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <h4>Lập trình viên</h4>
+              <p>Backend, Frontend &amp; Full-stack</p>
             </div>
+            <div class="about__card" data-aos="fade-up" data-aos-delay="200">
+              <div class="about__card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <h4>Giảng viên</h4>
+              <p>Người hướng dẫn &amp; Đào tạo</p>
+            </div>
+            <div class="about__card" data-aos="fade-up" data-aos-delay="300">
+              <div class="about__card-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <h4>Xây dựng nền tảng</h4>
+              <p>Founder NenTang.vn</p>
+            </div>
+            <div class="about__card" data-aos="fade-up" data-aos-delay="400">
+              <div class="about__card-icon"><i class="fa-solid fa-flask"></i></div>
+              <h4>Nhà nghiên cứu</h4>
+              <p>Khoa học &amp; Công nghệ</p>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
+  <!-- ============================================================
+       STATS SECTION
+  ============================================================ -->
+  <section class="stats" id="stats">
+    <div class="stats__bg"></div>
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat__card" data-aos="zoom-in" data-aos-delay="0">
+          <div class="stat__icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <div class="stat__number" data-target="10">0</div>
+          <div class="stat__suffix">+</div>
+          <div class="stat__label">Năm kinh nghiệm</div>
+        </div>
+        <div class="stat__card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="stat__icon"><i class="fa-solid fa-diagram-project"></i></div>
+          <div class="stat__number" data-target="50">0</div>
+          <div class="stat__suffix">+</div>
+          <div class="stat__label">Dự án tham gia</div>
+        </div>
+        <div class="stat__card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="stat__icon"><i class="fa-solid fa-users"></i></div>
+          <div class="stat__number" data-target="1000">0</div>
+          <div class="stat__suffix">+</div>
+          <div class="stat__label">Học viên hỗ trợ</div>
+        </div>
+        <div class="stat__card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="stat__icon"><i class="fa-solid fa-file-alt"></i></div>
+          <div class="stat__number" data-target="10">0</div>
+          <div class="stat__suffix">+</div>
+          <div class="stat__label">Bài báo khoa học</div>
+        </div>
+        <div class="stat__card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="stat__icon"><i class="fa-solid fa-rocket"></i></div>
+          <div class="stat__number" data-target="1">0</div>
+          <div class="stat__suffix"></div>
+          <div class="stat__label">Founder NenTang.vn</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+  <!-- ============================================================
+       EXPERIENCE SECTION
+  ============================================================ -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__tag">Kinh nghiệm</span>
+        <h2 class="section__title">Kinh Nghiệm <span class="highlight">Làm Việc</span></h2>
+        <p class="section__subtitle">Hơn 10 năm đồng hành cùng Đại học Cần Thơ và các dự án công nghệ</p>
+      </div>
 
-    <!-- jQuery library -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline__item" data-aos="fade-up">
+          <div class="timeline__dot"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="timeline__content card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__title">Trưởng nhóm Lập trình G2B</h3>
+                <p class="timeline__company">
+                  <i class="fa-solid fa-building"></i>
+                  Trung tâm Công nghệ Phần mềm – Đại học Cần Thơ
+                </p>
+              </div>
+              <span class="timeline__period">
+                <i class="fa-regular fa-calendar"></i> 2013 – Nay
+              </span>
+            </div>
+            <div class="timeline__jobs">
+              <h4>Công việc đảm nhận:</h4>
+              <ul class="timeline__list">
+                <li><i class="fa-solid fa-check-circle"></i> Phân tích yêu cầu và thiết kế kiến trúc hệ thống phần mềm</li>
+                <li><i class="fa-solid fa-check-circle"></i> Lập trình backend (PHP, Laravel, Java, Spring Boot) và frontend (React, Next.js)</li>
+                <li><i class="fa-solid fa-check-circle"></i> Quản lý nhóm phát triển phần mềm, phân công và theo dõi tiến độ</li>
+                <li><i class="fa-solid fa-check-circle"></i> Triển khai hệ thống trên môi trường production (Linux, Docker, Nginx)</li>
+                <li><i class="fa-solid fa-check-circle"></i> Đào tạo học viên và hướng dẫn thực hành dự án thực tế</li>
+                <li><i class="fa-solid fa-check-circle"></i> Nghiên cứu và ứng dụng công nghệ mới vào các dự án</li>
+              </ul>
+            </div>
+            <div class="timeline__tags">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Docker</span>
+            </div>
+          </div>
+        </div>
 
-    <!-- Placeholder Images -->
-    <script src="https://cdn.rawgit.com/imsky/holder/master/holder.js"></script>
+        <!-- Item 2 -->
+        <div class="timeline__item" data-aos="fade-up" data-aos-delay="150">
+          <div class="timeline__dot"><i class="fa-solid fa-globe"></i></div>
+          <div class="timeline__content card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__title">Founder &amp; Developer</h3>
+                <p class="timeline__company">
+                  <i class="fa-solid fa-globe"></i>
+                  NenTang.vn – Nền tảng học lập trình trực tuyến
+                </p>
+              </div>
+              <span class="timeline__period">
+                <i class="fa-regular fa-calendar"></i> 2020 – Nay
+              </span>
+            </div>
+            <div class="timeline__jobs">
+              <h4>Công việc đảm nhận:</h4>
+              <ul class="timeline__list">
+                <li><i class="fa-solid fa-check-circle"></i> Xây dựng và phát triển nền tảng học lập trình trực tuyến cho người Việt</li>
+                <li><i class="fa-solid fa-check-circle"></i> Thiết kế giáo trình và bài tập thực hành lập trình web</li>
+                <li><i class="fa-solid fa-check-circle"></i> Tạo hệ thống bài tập tương tác tại baitap.nentang.vn</li>
+                <li><i class="fa-solid fa-check-circle"></i> Hỗ trợ cộng đồng học viên học lập trình</li>
+              </ul>
+            </div>
+            <div class="timeline__tags">
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Content Creation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__tag">Kỹ năng</span>
+        <h2 class="section__title">Kỹ Năng <span class="highlight">Chuyên Môn</span></h2>
+        <p class="section__subtitle">Công nghệ và kỹ năng được tích lũy qua nhiều năm làm việc thực tế</p>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skills__card card" data-aos="fade-up" data-aos-delay="0">
+          <div class="skills__card-header">
+            <div class="skills__icon skills__icon--backend"><i class="fa-solid fa-server"></i></div>
+            <h3>Backend</h3>
+          </div>
+          <div class="skills__tags">
+            <span class="skill-tag skill-tag--primary">PHP</span>
+            <span class="skill-tag skill-tag--primary">Laravel</span>
+            <span class="skill-tag skill-tag--primary">Java</span>
+            <span class="skill-tag skill-tag--primary">Spring Boot</span>
+            <span class="skill-tag skill-tag--primary">Node.js</span>
+          </div>
+        </div>
+
+        <div class="skills__card card" data-aos="fade-up" data-aos-delay="100">
+          <div class="skills__card-header">
+            <div class="skills__icon skills__icon--frontend"><i class="fa-solid fa-desktop"></i></div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skills__tags">
+            <span class="skill-tag skill-tag--secondary">HTML</span>
+            <span class="skill-tag skill-tag--secondary">CSS</span>
+            <span class="skill-tag skill-tag--secondary">JavaScript</span>
+            <span class="skill-tag skill-tag--secondary">React</span>
+            <span class="skill-tag skill-tag--secondary">Next.js</span>
+            <span class="skill-tag skill-tag--secondary">Bootstrap</span>
+            <span class="skill-tag skill-tag--secondary">Tailwind</span>
+            <span class="skill-tag skill-tag--secondary">Mantine</span>
+          </div>
+        </div>
+
+        <div class="skills__card card" data-aos="fade-up" data-aos-delay="200">
+          <div class="skills__card-header">
+            <div class="skills__icon skills__icon--db"><i class="fa-solid fa-database"></i></div>
+            <h3>Database</h3>
+          </div>
+          <div class="skills__tags">
+            <span class="skill-tag skill-tag--accent">MySQL</span>
+            <span class="skill-tag skill-tag--accent">PostgreSQL</span>
+            <span class="skill-tag skill-tag--accent">SQL Server</span>
+          </div>
+        </div>
+
+        <div class="skills__card card" data-aos="fade-up" data-aos-delay="300">
+          <div class="skills__card-header">
+            <div class="skills__icon skills__icon--devops"><i class="fa-brands fa-docker"></i></div>
+            <h3>DevOps</h3>
+          </div>
+          <div class="skills__tags">
+            <span class="skill-tag skill-tag--devops">Docker</span>
+            <span class="skill-tag skill-tag--devops">Nginx</span>
+            <span class="skill-tag skill-tag--devops">Linux Ubuntu</span>
+            <span class="skill-tag skill-tag--devops">GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="skills__card card" data-aos="fade-up" data-aos-delay="400">
+          <div class="skills__card-header">
+            <div class="skills__icon skills__icon--ai"><i class="fa-solid fa-robot"></i></div>
+            <h3>AI &amp; Automation</h3>
+          </div>
+          <div class="skills__tags">
+            <span class="skill-tag skill-tag--ai">AI hỗ trợ lập trình</span>
+            <span class="skill-tag skill-tag--ai">AI review code</span>
+            <span class="skill-tag skill-tag--ai">AI tạo nội dung</span>
+          </div>
+        </div>
+
+        <div class="skills__card card" data-aos="fade-up" data-aos-delay="500">
+          <div class="skills__card-header">
+            <div class="skills__icon skills__icon--teaching"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <h3>Teaching</h3>
+          </div>
+          <div class="skills__tags">
+            <span class="skill-tag skill-tag--teaching">Giảng dạy lập trình</span>
+            <span class="skill-tag skill-tag--teaching">Xây dựng giáo trình</span>
+            <span class="skill-tag skill-tag--teaching">Hướng dẫn dự án</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__tag">Dự án</span>
+        <h2 class="section__title">Dự Án <span class="highlight">Tiêu Biểu</span></h2>
+        <p class="section__subtitle">Những dự án nổi bật đã được xây dựng và triển khai thực tế</p>
+      </div>
+
+      <div class="projects__grid">
+        <!-- Project 1 -->
+        <div class="project__card card" data-aos="fade-up" data-aos-delay="0">
+          <div class="project__image">
+            <img src="assets/img/project-1.svg" alt="Hệ thống quản lý đào tạo" />
+            <span class="project__role-badge">Tech Lead</span>
+          </div>
+          <div class="project__content">
+            <h3 class="project__name">Hệ thống Quản lý Đào tạo Trực tuyến</h3>
+            <p class="project__desc">Nền tảng quản lý khóa học, học viên, bài tập và kiểm tra trực tuyến. Hỗ trợ nhiều loại nội dung đa phương tiện.</p>
+            <div class="project__tags">
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+            <button class="btn btn--outline btn--sm" onclick="alert('Chi tiết dự án sẽ được cập nhật sớm!')">
+              <i class="fa-solid fa-eye"></i> Xem chi tiết
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project__card card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project__image">
+            <img src="assets/img/project-2.svg" alt="Hệ thống CMS" />
+            <span class="project__role-badge project__role-badge--dev">Developer</span>
+          </div>
+          <div class="project__content">
+            <h3 class="project__name">Hệ thống Quản lý Nội dung (CMS)</h3>
+            <p class="project__desc">CMS tùy chỉnh cho phép quản lý nội dung website linh hoạt, tích hợp trình soạn thảo WYSIWYG TinyMCE.</p>
+            <div class="project__tags">
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">TinyMCE</span>
+              <span class="skill-tag">Bootstrap</span>
+            </div>
+            <button class="btn btn--outline btn--sm" onclick="alert('Chi tiết dự án sẽ được cập nhật sớm!')">
+              <i class="fa-solid fa-eye"></i> Xem chi tiết
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project__card card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project__image">
+            <img src="assets/img/project-3.svg" alt="Hệ thống TMĐT" />
+            <span class="project__role-badge">Tech Lead</span>
+          </div>
+          <div class="project__content">
+            <h3 class="project__name">Hệ thống Thương mại Điện tử</h3>
+            <p class="project__desc">Nền tảng thương mại điện tử đầy đủ tính năng: giỏ hàng, thanh toán, quản lý đơn hàng và tích hợp REST API.</p>
+            <div class="project__tags">
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">REST API</span>
+            </div>
+            <button class="btn btn--outline btn--sm" onclick="alert('Chi tiết dự án sẽ được cập nhật sớm!')">
+              <i class="fa-solid fa-eye"></i> Xem chi tiết
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project__card card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project__image">
+            <img src="assets/img/project-4.svg" alt="Dashboard giám sát" />
+            <span class="project__role-badge">Tech Lead</span>
+          </div>
+          <div class="project__content">
+            <h3 class="project__name">Dashboard Giám sát Điều hành</h3>
+            <p class="project__desc">Hệ thống dashboard real-time cho phép giám sát hoạt động, hiển thị biểu đồ và thống kê theo thời gian thực qua WebSocket.</p>
+            <div class="project__tags">
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">WebSocket</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+            <button class="btn btn--outline btn--sm" onclick="alert('Chi tiết dự án sẽ được cập nhật sớm!')">
+              <i class="fa-solid fa-eye"></i> Xem chi tiết
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project__card card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project__image">
+            <img src="assets/img/project-5.svg" alt="Quản lý biểu mẫu động" />
+            <span class="project__role-badge project__role-badge--dev">Developer</span>
+          </div>
+          <div class="project__content">
+            <h3 class="project__name">Hệ thống Quản lý Biểu mẫu Động</h3>
+            <p class="project__desc">Hệ thống cho phép tạo và quản lý biểu mẫu động không cần lập trình, tích hợp với cơ sở dữ liệu qua Drizzle ORM.</p>
+            <div class="project__tags">
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Mantine</span>
+              <span class="skill-tag">Drizzle</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+            <button class="btn btn--outline btn--sm" onclick="alert('Chi tiết dự án sẽ được cập nhật sớm!')">
+              <i class="fa-solid fa-eye"></i> Xem chi tiết
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project__card card" data-aos="fade-up" data-aos-delay="500">
+          <div class="project__image">
+            <img src="assets/img/project-6.svg" alt="Công cụ thiết kế chứng chỉ" />
+            <span class="project__role-badge project__role-badge--dev">Developer</span>
+          </div>
+          <div class="project__content">
+            <h3 class="project__name">Công cụ Thiết kế Chứng chỉ</h3>
+            <p class="project__desc">Ứng dụng web cho phép thiết kế chứng chỉ bằng giao diện kéo thả GrapesJS, xuất file PDF chất lượng cao.</p>
+            <div class="project__tags">
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">GrapesJS</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+            <button class="btn btn--outline btn--sm" onclick="alert('Chi tiết dự án sẽ được cập nhật sớm!')">
+              <i class="fa-solid fa-eye"></i> Xem chi tiết
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PLATFORMS SECTION
+  ============================================================ -->
+  <section class="platforms section" id="platforms">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__tag">Nền tảng</span>
+        <h2 class="section__title">Nền Tảng Đã <span class="highlight">Xây Dựng</span></h2>
+        <p class="section__subtitle">Sản phẩm công nghệ được xây dựng để phục vụ cộng đồng học lập trình</p>
+      </div>
+
+      <div class="platforms__grid">
+        <!-- NenTang.vn - Main card -->
+        <div class="platform__card platform__card--main card" data-aos="fade-right">
+          <div class="platform__image">
+            <img src="assets/img/nentang-preview.svg" alt="NenTang.vn Preview" />
+          </div>
+          <div class="platform__content">
+            <div class="platform__logo">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>NenTang.vn</span>
+            </div>
+            <h3>Nền tảng Học Lập trình Trực tuyến</h3>
+            <p>NenTang.vn là nền tảng học lập trình trực tuyến được xây dựng dành riêng cho người Việt. Cung cấp giáo trình từ cơ bản đến nâng cao, hệ thống bài tập thực hành và cộng đồng hỗ trợ học tập.</p>
+            <ul class="platform__features">
+              <li><i class="fa-solid fa-check"></i> Giáo trình lập trình web từ cơ bản đến nâng cao</li>
+              <li><i class="fa-solid fa-check"></i> Bài tập thực hành tương tác</li>
+              <li><i class="fa-solid fa-check"></i> Cộng đồng học viên sôi nổi</li>
+              <li><i class="fa-solid fa-check"></i> Hướng dẫn dự án thực tế</li>
+            </ul>
+            <a href="https://nentang.vn" target="_blank" class="btn btn--primary">
+              <i class="fa-solid fa-external-link-alt"></i> Truy cập nền tảng
+            </a>
+          </div>
+        </div>
+
+        <!-- Baitap NenTang -->
+        <div class="platform__card card" data-aos="fade-left">
+          <div class="platform__icon-header">
+            <div class="platform__icon"><i class="fa-solid fa-pencil-alt"></i></div>
+          </div>
+          <div class="platform__content">
+            <div class="platform__logo">
+              <i class="fa-solid fa-tasks"></i>
+              <span>Baitap NenTang</span>
+            </div>
+            <h3>Hệ thống Bài Tập Tương tác</h3>
+            <p>Hệ thống bài tập lập trình tương tác giúp học viên luyện tập các kỹ năng HTML, CSS, JavaScript, PHP và Laravel ngay trên trình duyệt.</p>
+            <ul class="platform__features">
+              <li><i class="fa-solid fa-check"></i> Bài tập HTML / CSS / JavaScript</li>
+              <li><i class="fa-solid fa-check"></i> Bài tập PHP &amp; Laravel</li>
+              <li><i class="fa-solid fa-check"></i> Chạy code trực tiếp trên trình duyệt</li>
+              <li><i class="fa-solid fa-check"></i> Chấm bài tự động</li>
+            </ul>
+            <a href="https://baitap.nentang.vn" target="_blank" class="btn btn--outline">
+              <i class="fa-solid fa-external-link-alt"></i> Truy cập hệ thống bài tập
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PUBLICATIONS SECTION
+  ============================================================ -->
+  <section class="publications section" id="publications">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__tag">Nghiên cứu</span>
+        <h2 class="section__title">Bài Báo <span class="highlight">Khoa Học</span></h2>
+        <p class="section__subtitle">Các công trình nghiên cứu khoa học đã được công bố</p>
+      </div>
+
+      <div class="publications__grid">
+        <div class="publication__card card" data-aos="fade-up" data-aos-delay="0">
+          <div class="publication__year">20xx</div>
+          <div class="publication__content">
+            <h3 class="publication__title">Tên bài báo sẽ cập nhật</h3>
+            <p class="publication__authors"><i class="fa-solid fa-users"></i> Dương Nguyễn Phú Cường et al.</p>
+            <p class="publication__venue"><i class="fa-solid fa-book-open"></i> Đang cập nhật</p>
+            <div class="publication__tags"><span class="skill-tag">Đang cập nhật</span></div>
+          </div>
+          <button class="btn btn--outline btn--sm" disabled>
+            <i class="fa-solid fa-eye"></i> Xem thêm
+          </button>
+        </div>
+
+        <div class="publication__card card" data-aos="fade-up" data-aos-delay="100">
+          <div class="publication__year">20xx</div>
+          <div class="publication__content">
+            <h3 class="publication__title">Tên bài báo sẽ cập nhật</h3>
+            <p class="publication__authors"><i class="fa-solid fa-users"></i> Dương Nguyễn Phú Cường et al.</p>
+            <p class="publication__venue"><i class="fa-solid fa-book-open"></i> Đang cập nhật</p>
+            <div class="publication__tags"><span class="skill-tag">Đang cập nhật</span></div>
+          </div>
+          <button class="btn btn--outline btn--sm" disabled>
+            <i class="fa-solid fa-eye"></i> Xem thêm
+          </button>
+        </div>
+
+        <div class="publication__card card" data-aos="fade-up" data-aos-delay="200">
+          <div class="publication__year">20xx</div>
+          <div class="publication__content">
+            <h3 class="publication__title">Tên bài báo sẽ cập nhật</h3>
+            <p class="publication__authors"><i class="fa-solid fa-users"></i> Dương Nguyễn Phú Cường et al.</p>
+            <p class="publication__venue"><i class="fa-solid fa-book-open"></i> Đang cập nhật</p>
+            <div class="publication__tags"><span class="skill-tag">Đang cập nhật</span></div>
+          </div>
+          <button class="btn btn--outline btn--sm" disabled>
+            <i class="fa-solid fa-eye"></i> Xem thêm
+          </button>
+        </div>
+
+        <div class="publication__card card" data-aos="fade-up" data-aos-delay="300">
+          <div class="publication__year">20xx</div>
+          <div class="publication__content">
+            <h3 class="publication__title">Tên bài báo sẽ cập nhật</h3>
+            <p class="publication__authors"><i class="fa-solid fa-users"></i> Dương Nguyễn Phú Cường et al.</p>
+            <p class="publication__venue"><i class="fa-solid fa-book-open"></i> Đang cập nhật</p>
+            <div class="publication__tags"><span class="skill-tag">Đang cập nhật</span></div>
+          </div>
+          <button class="btn btn--outline btn--sm" disabled>
+            <i class="fa-solid fa-eye"></i> Xem thêm
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TEACHING SECTION
+  ============================================================ -->
+  <section class="teaching section" id="teaching">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__tag">Giảng dạy</span>
+        <h2 class="section__title">Hoạt Động <span class="highlight">Giảng Dạy</span></h2>
+        <p class="section__subtitle">Đào tạo và truyền cảm hứng cho hàng ngàn học viên lập trình</p>
+      </div>
+
+      <div class="teaching__grid">
+        <div class="teaching__card card" data-aos="fade-up" data-aos-delay="0">
+          <div class="teaching__icon"><i class="fa-solid fa-file-code"></i></div>
+          <h3>Thiết kế giáo trình lập trình web</h3>
+          <p>Xây dựng chương trình học từ HTML cơ bản đến các framework hiện đại như Laravel, React, Next.js.</p>
+        </div>
+
+        <div class="teaching__card card" data-aos="fade-up" data-aos-delay="100">
+          <div class="teaching__icon"><i class="fa-solid fa-tools"></i></div>
+          <h3>Hướng dẫn thực hành dự án</h3>
+          <p>Hướng dẫn học viên thực hiện các dự án thực tế từ phân tích yêu cầu đến triển khai sản phẩm.</p>
+        </div>
+
+        <div class="teaching__card card" data-aos="fade-up" data-aos-delay="200">
+          <div class="teaching__icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Xây dựng bài tập thực hành</h3>
+          <p>Thiết kế bài tập HTML, CSS, JS, PHP, Laravel, Spring Boot, Next.js theo từng cấp độ.</p>
+        </div>
+
+        <div class="teaching__card card" data-aos="fade-up" data-aos-delay="300">
+          <div class="teaching__icon"><i class="fa-solid fa-chart-bar"></i></div>
+          <h3>Tổ chức kiểm tra, đánh giá</h3>
+          <p>Thiết kế bài kiểm tra và đánh giá năng lực học viên theo chuẩn công nghiệp.</p>
+        </div>
+
+        <div class="teaching__card card" data-aos="fade-up" data-aos-delay="400">
+          <div class="teaching__icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>Ứng dụng AI vào học tập</h3>
+          <p>Hướng dẫn học viên sử dụng AI để hỗ trợ lập trình, review code và học nhanh hơn.</p>
+        </div>
+
+        <div class="teaching__card card" data-aos="fade-up" data-aos-delay="500">
+          <div class="teaching__icon"><i class="fa-solid fa-vial"></i></div>
+          <h3>Kiểm thử phần mềm thực tế</h3>
+          <p>Đào tạo kỹ năng kiểm thử phần mềm, viết test case và thực hiện kiểm thử tự động.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY SECTION
+  ============================================================ -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__tag">Hình ảnh</span>
+        <h2 class="section__title">Hình Ảnh <span class="highlight">Hoạt Động</span></h2>
+        <p class="section__subtitle">Những khoảnh khắc đáng nhớ trong công việc và giảng dạy</p>
+      </div>
+
+      <div class="gallery__grid">
+        <div class="gallery__item" data-aos="zoom-in" data-aos-delay="0">
+          <img src="assets/img/gallery-1.svg" alt="Hoạt động 1" loading="lazy" />
+          <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery__item" data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/img/gallery-2.svg" alt="Hoạt động 2" loading="lazy" />
+          <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery__item" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/gallery-3.svg" alt="Hoạt động 3" loading="lazy" />
+          <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery__item" data-aos="zoom-in" data-aos-delay="300">
+          <img src="assets/img/gallery-4.svg" alt="Hoạt động 4" loading="lazy" />
+          <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery__item" data-aos="zoom-in" data-aos-delay="400">
+          <img src="assets/img/gallery-5.svg" alt="Hoạt động 5" loading="lazy" />
+          <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery__item" data-aos="zoom-in" data-aos-delay="500">
+          <img src="assets/img/gallery-6.svg" alt="Hoạt động 6" loading="lazy" />
+          <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Modal Lightbox -->
+  <div class="modal" id="gallery-modal" role="dialog" aria-modal="true" aria-label="Image preview">
+    <div class="modal__backdrop" id="modal-backdrop"></div>
+    <div class="modal__container">
+      <button class="modal__close" id="modal-close" aria-label="Close modal">
+        <i class="fa-solid fa-times"></i>
+      </button>
+      <img src="" alt="Gallery image" class="modal__image" id="modal-image" />
+    </div>
+  </div>
+
+  <!-- ============================================================
+       WORKFLOW SECTION
+  ============================================================ -->
+  <section class="workflow section" id="workflow">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__tag">Quy trình</span>
+        <h2 class="section__title">Quy Trình <span class="highlight">Làm Việc</span></h2>
+        <p class="section__subtitle">Phương pháp làm việc chuyên nghiệp và hiệu quả</p>
+      </div>
+
+      <div class="workflow__grid">
+        <div class="workflow__step" data-aos="fade-up" data-aos-delay="0">
+          <div class="workflow__number">01</div>
+          <div class="workflow__icon"><i class="fa-solid fa-ear-listen"></i></div>
+          <h3>Lắng nghe &amp; Phân tích</h3>
+          <p>Lắng nghe yêu cầu khách hàng, phân tích nghiệp vụ và xác định phạm vi dự án một cách kỹ lưỡng.</p>
+        </div>
+
+        <div class="workflow__step" data-aos="fade-up" data-aos-delay="100">
+          <div class="workflow__number">02</div>
+          <div class="workflow__icon"><i class="fa-solid fa-pencil-ruler"></i></div>
+          <h3>Thiết kế Giải pháp</h3>
+          <p>Thiết kế kiến trúc hệ thống, lựa chọn công nghệ phù hợp và lập kế hoạch phát triển chi tiết.</p>
+        </div>
+
+        <div class="workflow__step" data-aos="fade-up" data-aos-delay="200">
+          <div class="workflow__number">03</div>
+          <div class="workflow__icon"><i class="fa-solid fa-cogs"></i></div>
+          <h3>Phát triển &amp; Kiểm thử</h3>
+          <p>Lập trình theo chuẩn, viết test tự động và kiểm thử kỹ càng trước khi bàn giao.</p>
+        </div>
+
+        <div class="workflow__step" data-aos="fade-up" data-aos-delay="300">
+          <div class="workflow__number">04</div>
+          <div class="workflow__icon"><i class="fa-solid fa-rocket"></i></div>
+          <h3>Triển khai &amp; Đồng hành</h3>
+          <p>Triển khai hệ thống lên môi trường production, đào tạo người dùng và hỗ trợ lâu dài.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__tag">Liên hệ</span>
+        <h2 class="section__title">Liên <span class="highlight">Hệ</span></h2>
+        <p class="section__subtitle">Hãy liên hệ nếu bạn có dự án thú vị hoặc muốn hợp tác!</p>
+      </div>
+
+      <div class="contact__grid">
+        <!-- Form -->
+        <div class="contact__form-col" data-aos="fade-right">
+          <div class="card contact__form-card">
+            <h3><i class="fa-solid fa-paper-plane"></i> Gửi tin nhắn</h3>
+            <form class="contact__form" id="contact-form" novalidate>
+              <div class="form__group">
+                <label for="name">Họ và tên <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required />
+              </div>
+              <div class="form__group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email" required />
+              </div>
+              <div class="form__group">
+                <label for="subject">Chủ đề</label>
+                <input type="text" id="subject" name="subject" placeholder="Chủ đề tin nhắn" />
+              </div>
+              <div class="form__group">
+                <label for="message">Nội dung <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Nội dung tin nhắn..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">
+                <i class="fa-solid fa-paper-plane"></i> Gửi tin nhắn
+              </button>
+              <div class="form__success" id="form-success" style="display:none;">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Tin nhắn đã được gửi thành công! Tôi sẽ phản hồi sớm nhất có thể.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="contact__info-col" data-aos="fade-left">
+          <div class="contact__info-card card">
+            <div class="contact__info-item">
+              <div class="contact__info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:phucuong@ctu.edu.vn">phucuong@ctu.edu.vn</a>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Điện thoại</h4>
+                <a href="tel:+84915659223">0915 659 223</a>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon"><i class="fa-solid fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Địa chỉ</h4>
+                <p>Trung tâm Công nghệ Phần mềm<br />Đại học Cần Thơ, TP. Cần Thơ</p>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon"><i class="fa-solid fa-globe"></i></div>
+              <div>
+                <h4>Website</h4>
+                <a href="https://nentang.vn" target="_blank">nentang.vn</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__social card">
+            <h4>Kết nối với tôi</h4>
+            <div class="social__links">
+              <a href="https://github.com/kellyfire611" target="_blank" class="social__link social__link--github">
+                <i class="fa-brands fa-github"></i><span>GitHub</span>
+              </a>
+              <a href="https://www.facebook.com" target="_blank" class="social__link social__link--facebook">
+                <i class="fa-brands fa-facebook"></i><span>Facebook</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="social__link social__link--linkedin">
+                <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+              </a>
+              <a href="https://nentang.vn" target="_blank" class="social__link social__link--website">
+                <i class="fa-solid fa-globe"></i><span>NenTang.vn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="#hero" class="footer__logo">
+              <i class="fa-solid fa-code"></i>
+              <span>DNPCuong</span>
+            </a>
+            <p class="footer__desc">
+              Trưởng nhóm Lập trình G2B, Founder NenTang.vn. Đam mê xây dựng phần mềm
+              và đào tạo lập trình viên tương lai.
+            </p>
+            <div class="footer__socials">
+              <a href="https://github.com/kellyfire611" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://nentang.vn" target="_blank" aria-label="NenTang.vn"><i class="fa-solid fa-globe"></i></a>
+            </div>
+          </div>
+
+          <div class="footer__links">
+            <h4>Điều hướng</h4>
+            <ul>
+              <li><a href="#hero">Trang chủ</a></li>
+              <li><a href="#about">Giới thiệu</a></li>
+              <li><a href="#experience">Kinh nghiệm</a></li>
+              <li><a href="#projects">Dự án</a></li>
+              <li><a href="#platforms">Nền tảng</a></li>
+              <li><a href="#publications">Bài báo</a></li>
+              <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__contact">
+            <h4>Liên hệ</h4>
+            <ul>
+              <li><i class="fa-solid fa-envelope"></i> phucuong@ctu.edu.vn</li>
+              <li><i class="fa-solid fa-phone"></i> 0915 659 223</li>
+              <li><i class="fa-solid fa-globe"></i> <a href="https://nentang.vn" target="_blank">nentang.vn</a></li>
+              <li><i class="fa-solid fa-map-marker-alt"></i> Cần Thơ, Việt Nam</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 Dương Nguyễn Phú Cường. All rights reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart" style="color:var(--primary)"></i> in Cần Thơ</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>

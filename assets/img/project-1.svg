@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <rect width="400" height="220" fill="#fff0ec" rx="0"/>
+  <circle cx="340" cy="40"  r="60" fill="#ffb4a2" opacity="0.25"/>
+  <circle cx="60"  cy="180" r="50" fill="#f9dcc4"  opacity="0.3"/>
+  <rect x="120" y="52"  width="160" height="116" rx="12" fill="white" stroke="#ffd6cc" stroke-width="1.5"/>
+  <rect x="120" y="52"  width="160" height="32"  rx="12" fill="#ef6f6c"/>
+  <rect x="120" y="72"  width="160" height="12"  fill="#ef6f6c"/>
+  <circle cx="138" cy="68" r="5" fill="white" opacity="0.6"/>
+  <circle cx="153" cy="68" r="5" fill="white" opacity="0.6"/>
+  <circle cx="168" cy="68" r="5" fill="white" opacity="0.6"/>
+  <rect x="134" y="98"  width="132" height="8"  rx="4" fill="#ffd6cc"/>
+  <rect x="134" y="112" width="100" height="6"  rx="3" fill="#ffd6cc" opacity="0.7"/>
+  <rect x="134" y="124" width="116" height="6"  rx="3" fill="#ffd6cc" opacity="0.6"/>
+  <rect x="134" y="136" width="90"  height="6"  rx="3" fill="#ffd6cc" opacity="0.5"/>
+  <rect x="134" y="148" width="80"  height="20" rx="8" fill="#ef6f6c" opacity="0.15"/>
+  <text x="174" y="162" font-family="Arial,sans-serif" font-size="9" fill="#ef6f6c" text-anchor="middle" font-weight="600">E-Learning</text>
+  <text x="200" y="32" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="13" fill="white" text-anchor="middle" font-weight="700" opacity="0.0">1</text>
+  <!-- Icon -->
+  <circle cx="68" cy="68" r="28" fill="#ef6f6c" opacity="0.12"/>
+  <text x="68" y="76" font-family="Arial,sans-serif" font-size="22" fill="#ef6f6c" text-anchor="middle">🎓</text>
+  <circle cx="332" cy="152" r="28" fill="#ffb4a2" opacity="0.15"/>
+  <text x="332" y="160" font-family="Arial,sans-serif" font-size="22" fill="#ef6f6c" text-anchor="middle">📚</text>
+</svg>

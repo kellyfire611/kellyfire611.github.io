@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="g1bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0ec"/>
+      <stop offset="100%" stop-color="#ffb4a2"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g1bg)"/>
+  <circle cx="320" cy="60"  r="80" fill="#ef6f6c" opacity="0.12"/>
+  <circle cx="80"  cy="240" r="60" fill="#f9dcc4"  opacity="0.2"/>
+  <!-- Screen mockup -->
+  <rect x="70"  y="70"  width="260" height="165" rx="12" fill="white" opacity="0.9" stroke="#ffd6cc" stroke-width="1.5"/>
+  <rect x="70"  y="70"  width="260" height="28"  rx="12" fill="#ef6f6c"/>
+  <rect x="70"  y="86"  width="260" height="12"  fill="#ef6f6c"/>
+  <circle cx="88"  cy="84" r="4.5" fill="white" opacity="0.5"/>
+  <circle cx="102" cy="84" r="4.5" fill="white" opacity="0.5"/>
+  <circle cx="116" cy="84" r="4.5" fill="white" opacity="0.5"/>
+  <rect x="86"  y="112" width="228" height="8"  rx="4" fill="#ffd6cc"/>
+  <rect x="86"  y="126" width="180" height="6"  rx="3" fill="#ffd6cc" opacity="0.7"/>
+  <rect x="86"  y="138" width="200" height="6"  rx="3" fill="#ffd6cc" opacity="0.6"/>
+  <rect x="86"  y="150" width="150" height="6"  rx="3" fill="#ffd6cc" opacity="0.5"/>
+  <rect x="86"  y="168" width="80"  height="22" rx="8" fill="#ef6f6c" opacity="0.15"/>
+  <text x="126" y="183" font-family="Arial,sans-serif" font-size="9" fill="#ef6f6c" text-anchor="middle" font-weight="600">Giảng dạy</text>
+  <!-- Label -->
+  <text x="200" y="258" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="14" fill="#ef6f6c" text-anchor="middle" font-weight="700">Hoạt động giảng dạy</text>
+  <text x="200" y="276" font-family="Arial,sans-serif" font-size="11" fill="#b07060" text-anchor="middle">Lập trình Web</text>
+</svg>

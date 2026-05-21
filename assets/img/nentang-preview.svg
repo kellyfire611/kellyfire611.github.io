@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+  <defs>
+    <linearGradient id="ntBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef6f6c"/>
+      <stop offset="100%" stop-color="#d45956"/>
+    </linearGradient>
+    <linearGradient id="ntCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff7f5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="340" fill="url(#ntBg)" rx="18"/>
+
+  <!-- Browser chrome -->
+  <rect x="30"  y="24"  width="540" height="292" rx="14" fill="white"/>
+  <rect x="30"  y="24"  width="540" height="36"  rx="14" fill="#f5f0f0"/>
+  <rect x="30"  y="48"  width="540" height="12"  fill="#f5f0f0"/>
+  <circle cx="52"  cy="42" r="6" fill="#ef6f6c" opacity="0.8"/>
+  <circle cx="70"  cy="42" r="6" fill="#ffb4a2" opacity="0.8"/>
+  <circle cx="88"  cy="42" r="6" fill="#f9dcc4" opacity="0.8"/>
+  <rect x="105" y="35" width="220" height="14" rx="7" fill="#ffd6cc"/>
+  <text x="215" y="45" font-family="Arial,sans-serif" font-size="9" fill="#ef6f6c" text-anchor="middle" font-weight="600">nentang.vn</text>
+
+  <!-- Hero strip -->
+  <rect x="30"  y="60" width="540" height="70" fill="#fff0ec"/>
+  <rect x="50"  y="74"  width="120" height="16" rx="8"  fill="url(#ntBg)"/>
+  <rect x="50"  y="96"  width="240" height="10" rx="5"  fill="#ffb4a2" opacity="0.6"/>
+  <rect x="50"  y="112" width="180" height="10" rx="5"  fill="#f9dcc4" opacity="0.7"/>
+  <rect x="440" y="74"  width="100" height="42" rx="10" fill="url(#ntBg)" opacity="0.2"/>
+  <text x="490" y="100" font-family="Arial,sans-serif" font-size="24" fill="#ef6f6c" text-anchor="middle">&lt;/&gt;</text>
+
+  <!-- Cards row -->
+  <rect x="40"  y="145" width="148" height="90" rx="10" fill="url(#ntCard)" stroke="#ffd6cc" stroke-width="1"/>
+  <rect x="204" y="145" width="148" height="90" rx="10" fill="url(#ntCard)" stroke="#ffd6cc" stroke-width="1"/>
+  <rect x="368" y="145" width="148" height="90" rx="10" fill="url(#ntCard)" stroke="#ffd6cc" stroke-width="1"/>
+  <rect x="532" y="145" width="48"  height="90" rx="10" fill="url(#ntCard)" stroke="#ffd6cc" stroke-width="1" opacity="0.5"/>
+
+  <!-- Card icons -->
+  <circle cx="80"  cy="170" r="14" fill="#ffb4a2" opacity="0.5"/>
+  <circle cx="244" cy="170" r="14" fill="#f9dcc4" opacity="0.7"/>
+  <circle cx="408" cy="170" r="14" fill="#ef6f6c" opacity="0.3"/>
+  <rect x="52"  y="192" width="88"  height="7"  rx="3.5" fill="#ffd6cc"/>
+  <rect x="52"  y="204" width="64"  height="5"  rx="2.5" fill="#ffd6cc" opacity="0.6"/>
+  <rect x="52"  y="213" width="76"  height="5"  rx="2.5" fill="#ffd6cc" opacity="0.6"/>
+  <rect x="216" y="192" width="88"  height="7"  rx="3.5" fill="#ffd6cc"/>
+  <rect x="216" y="204" width="64"  height="5"  rx="2.5" fill="#ffd6cc" opacity="0.6"/>
+  <rect x="216" y="213" width="76"  height="5"  rx="2.5" fill="#ffd6cc" opacity="0.6"/>
+  <rect x="380" y="192" width="88"  height="7"  rx="3.5" fill="#ffd6cc"/>
+  <rect x="380" y="204" width="64"  height="5"  rx="2.5" fill="#ffd6cc" opacity="0.6"/>
+  <rect x="380" y="213" width="76"  height="5"  rx="2.5" fill="#ffd6cc" opacity="0.6"/>
+
+  <!-- Bottom bar -->
+  <rect x="30" y="268" width="540" height="54" rx="14" fill="#fff7f5" stroke="#ffd6cc" stroke-width="1"/>
+  <rect x="50" y="280" width="80"  height="10" rx="5" fill="#ffd6cc"/>
+  <rect x="50" y="295" width="60"  height="8"  rx="4" fill="#ffd6cc" opacity="0.6"/>
+  <rect x="440" y="278" width="110" height="28" rx="9" fill="url(#ntBg)"/>
+  <text x="495" y="297" font-family="Arial,sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="600">Bắt đầu học</text>
+</svg>

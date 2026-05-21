@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <rect width="400" height="220" fill="#fff5f0" rx="0"/>
+  <circle cx="350" cy="52"  r="60" fill="#ffc8a0" opacity="0.25"/>
+  <circle cx="52"  cy="170" r="50" fill="#ffe8d0" opacity="0.3"/>
+  <!-- Certificate preview -->
+  <rect x="90" y="38"  width="220" height="148" rx="14" fill="white" stroke="#ffd6cc" stroke-width="2"/>
+  <rect x="90" y="38"  width="220" height="6"   rx="6"  fill="#ef6f6c"/>
+  <rect x="90" y="180" width="220" height="6"   rx="6"  fill="#ef6f6c"/>
+  <!-- Decorative border lines -->
+  <rect x="98" y="52"  width="204" height="128" rx="8" fill="none" stroke="#ffd6cc" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <!-- Certificate content -->
+  <text x="200" y="80"  font-family="Arial,sans-serif" font-size="9"  fill="#ef6f6c" text-anchor="middle" font-weight="700" letter-spacing="2">CERTIFICATE</text>
+  <rect x="140" y="84" width="120" height="2"   rx="1"  fill="#ffd6cc"/>
+  <text x="200" y="100" font-family="Arial,sans-serif" font-size="7"  fill="#b0a0a0" text-anchor="middle">of Completion</text>
+  <rect x="130" y="108" width="140" height="10" rx="5"  fill="#ffd6cc" opacity="0.5"/>
+  <rect x="150" y="122" width="100" height="8"  rx="4"  fill="#ffd6cc" opacity="0.4"/>
+  <!-- Seal -->
+  <circle cx="200" cy="152" r="18"  fill="#ef6f6c" opacity="0.12"/>
+  <circle cx="200" cy="152" r="14"  fill="none" stroke="#ef6f6c" stroke-width="1.5"/>
+  <text x="200" y="156" font-family="Arial,sans-serif" font-size="12" fill="#ef6f6c" text-anchor="middle">★</text>
+  <circle cx="68"  cy="64"  r="24" fill="#ef6f6c" opacity="0.1"/>
+  <text x="68"  y="72"  font-family="Arial,sans-serif" font-size="20" fill="#ef6f6c" text-anchor="middle">🏆</text>
+  <circle cx="332" cy="158" r="24" fill="#ffd6cc" opacity="0.25"/>
+  <text x="332" y="166" font-family="Arial,sans-serif" font-size="20" fill="#ef6f6c" text-anchor="middle">🎨</text>
+</svg>

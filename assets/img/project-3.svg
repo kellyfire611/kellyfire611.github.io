@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <rect width="400" height="220" fill="#f0fff4" rx="0"/>
+  <circle cx="360" cy="55"  r="60" fill="#a0e0b8" opacity="0.25"/>
+  <circle cx="45"  cy="175" r="50" fill="#c8f0d8" opacity="0.3"/>
+  <rect x="110" y="45"  width="180" height="130" rx="14" fill="white" stroke="#a0d8b8" stroke-width="1.5"/>
+  <rect x="110" y="45"  width="180" height="36"  rx="14" fill="#27804f"/>
+  <rect x="110" y="69"  width="180" height="12"  fill="#27804f"/>
+  <circle cx="130" cy="63" r="5" fill="white" opacity="0.5"/>
+  <circle cx="145" cy="63" r="5" fill="white" opacity="0.5"/>
+  <rect x="158" y="57" width="100" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+  <rect x="126" y="92"  width="148" height="8"  rx="4" fill="#c8f0d8"/>
+  <rect x="126" y="106" width="110" height="6"  rx="3" fill="#c8f0d8" opacity="0.7"/>
+  <rect x="126" y="118" width="130" height="6"  rx="3" fill="#c8f0d8" opacity="0.6"/>
+  <rect x="126" y="130" width="95"  height="6"  rx="3" fill="#c8f0d8" opacity="0.5"/>
+  <rect x="126" y="146" width="148" height="18" rx="7" fill="#27804f" opacity="0.12"/>
+  <text x="200" y="159" font-family="Arial,sans-serif" font-size="9" fill="#27804f" text-anchor="middle" font-weight="600">E-Commerce</text>
+  <circle cx="65"  cy="65" r="28" fill="#27804f" opacity="0.1"/>
+  <text x="65"  y="73" font-family="Arial,sans-serif" font-size="22" fill="#27804f" text-anchor="middle">🛍️</text>
+  <circle cx="335" cy="155" r="26" fill="#c8f0d8" opacity="0.25"/>
+  <text x="335" y="163" font-family="Arial,sans-serif" font-size="20" fill="#27804f" text-anchor="middle">💳</text>
+</svg>
