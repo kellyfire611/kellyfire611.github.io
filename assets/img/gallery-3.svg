@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="g3bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fff4"/>
+      <stop offset="100%" stop-color="#b8ecd0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g3bg)"/>
+  <circle cx="315" cy="55"  r="72" fill="#60c080" opacity="0.12"/>
+  <circle cx="80"  cy="240" r="58" fill="#c8f0d8"  opacity="0.2"/>
+  <!-- Code editor mockup -->
+  <rect x="70" y="65" width="260" height="172" rx="12" fill="white" opacity="0.92" stroke="#a0e0b8" stroke-width="1.5"/>
+  <rect x="70" y="65" width="260" height="28"  rx="12" fill="#1e3a2a"/>
+  <rect x="70" y="81" width="260" height="12"  fill="#1e3a2a"/>
+  <circle cx="88"  cy="79" r="4.5" fill="#ef6f6c" opacity="0.8"/>
+  <circle cx="102" cy="79" r="4.5" fill="#f0c040" opacity="0.8"/>
+  <circle cx="116" cy="79" r="4.5" fill="#60c080" opacity="0.8"/>
+  <!-- Fake code lines -->
+  <rect x="90" y="106" width="60"  height="6" rx="3" fill="#8080d0" opacity="0.7"/>
+  <rect x="155" y="106" width="80"  height="6" rx="3" fill="#60c080" opacity="0.7"/>
+  <rect x="100" y="118" width="40"  height="6" rx="3" fill="#f0c040" opacity="0.7"/>
+  <rect x="146" y="118" width="100" height="6" rx="3" fill="#c0e8ff" opacity="0.7"/>
+  <rect x="100" y="130" width="60"  height="6" rx="3" fill="#ef6f6c" opacity="0.7"/>
+  <rect x="100" y="142" width="30"  height="6" rx="3" fill="#f0c040" opacity="0.7"/>
+  <rect x="136" y="142" width="90"  height="6" rx="3" fill="#c0e8ff" opacity="0.7"/>
+  <rect x="90"  y="154" width="50"  height="6" rx="3" fill="#8080d0" opacity="0.7"/>
+  <rect x="90"  y="166" width="70"  height="6" rx="3" fill="#60c080" opacity="0.6"/>
+  <rect x="166" y="166" width="60"  height="6" rx="3" fill="#c0e8ff" opacity="0.6"/>
+  <rect x="90"  y="178" width="120" height="6" rx="3" fill="#ef6f6c" opacity="0.5"/>
+  <text x="200" y="258" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="14" fill="#27804f" text-anchor="middle" font-weight="700">Lập trình &amp; Code</text>
+  <text x="200" y="276" font-family="Arial,sans-serif" font-size="11" fill="#508060" text-anchor="middle">Dự án thực tế</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="g2bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f0ff"/>
+      <stop offset="100%" stop-color="#c8c8f8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g2bg)"/>
+  <circle cx="325" cy="65"  r="75" fill="#a0a0e8" opacity="0.15"/>
+  <circle cx="75"  cy="235" r="60" fill="#e0e0ff"  opacity="0.2"/>
+  <!-- Team meeting illustration -->
+  <!-- Table -->
+  <rect x="80" y="168" width="240" height="10" rx="5" fill="#9090d0" opacity="0.35"/>
+  <rect x="120" y="174" width="8"  height="30" rx="3" fill="#9090d0" opacity="0.3"/>
+  <rect x="272" y="174" width="8"  height="30" rx="3" fill="#9090d0" opacity="0.3"/>
+  <!-- Persons -->
+  <circle cx="130" cy="135" r="22" fill="#c8c8f8"/>
+  <rect x="116" y="156" width="28" height="18" rx="6" fill="#a0a0e8"/>
+  <circle cx="200" cy="128" r="25" fill="#b8b8f8"/>
+  <rect x="185" y="151" width="30" height="20" rx="6" fill="#8080d8"/>
+  <circle cx="268" cy="135" r="22" fill="#c8c8f8"/>
+  <rect x="254" y="156" width="28" height="18" rx="6" fill="#a0a0e8"/>
+  <!-- Screen behind -->
+  <rect x="138" y="75"  width="124" height="78" rx="8" fill="white" opacity="0.8" stroke="#c8c8f8" stroke-width="1.5"/>
+  <rect x="138" y="75"  width="124" height="20" rx="8" fill="#8080d8"/>
+  <rect x="138" y="85"  width="124" height="10" fill="#8080d8"/>
+  <rect x="148" y="104" width="104" height="6"  rx="3" fill="#e0e0ff"/>
+  <rect x="148" y="116" width="80"  height="5"  rx="2" fill="#e0e0ff" opacity="0.8"/>
+  <rect x="148" y="126" width="90"  height="5"  rx="2" fill="#e0e0ff" opacity="0.7"/>
+  <text x="200" y="258" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="14" fill="#6060c0" text-anchor="middle" font-weight="700">Hội thảo / Workshop</text>
+  <text x="200" y="276" font-family="Arial,sans-serif" font-size="11" fill="#8080b0" text-anchor="middle">Kết nối cộng đồng</text>
+</svg>

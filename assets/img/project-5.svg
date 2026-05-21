@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <rect width="400" height="220" fill="#fff8f0" rx="0"/>
+  <circle cx="345" cy="48"  r="58" fill="#f0d8b8" opacity="0.3"/>
+  <circle cx="55"  cy="172" r="48" fill="#f8e8c8" opacity="0.35"/>
+  <rect x="100" y="38"  width="200" height="144" rx="14" fill="white" stroke="#f0d8b8" stroke-width="1.5"/>
+  <rect x="100" y="38"  width="200" height="36"  rx="14" fill="#805f20"/>
+  <rect x="100" y="62"  width="200" height="12"  fill="#805f20"/>
+  <!-- Form fields -->
+  <rect x="116" y="92"  width="168" height="12" rx="4" fill="#f8e8c8"/>
+  <rect x="116" y="110" width="168" height="12" rx="4" fill="#f8e8c8"/>
+  <rect x="116" y="128" width="168" height="12" rx="4" fill="#f8e8c8"/>
+  <rect x="116" y="146" width="80"  height="12" rx="4" fill="#f8e8c8"/>
+  <rect x="206" y="146" width="78"  height="12" rx="4" fill="#805f20" opacity="0.15"/>
+  <text x="245" y="156" font-family="Arial,sans-serif" font-size="8" fill="#805f20" text-anchor="middle" font-weight="600">+ Thêm</text>
+  <!-- Submit -->
+  <rect x="116" y="164" width="168" height="8" rx="4" fill="#805f20" opacity="0.12"/>
+  <text x="200" y="172" font-family="Arial,sans-serif" font-size="8" fill="#805f20" text-anchor="middle" font-weight="600">Dynamic Form</text>
+  <circle cx="68"  cy="68" r="24" fill="#805f20" opacity="0.1"/>
+  <text x="68"  y="76" font-family="Arial,sans-serif" font-size="20" fill="#805f20" text-anchor="middle">📋</text>
+  <circle cx="332" cy="155" r="24" fill="#f0d8b8" opacity="0.3"/>
+  <text x="332" y="163" font-family="Arial,sans-serif" font-size="20" fill="#805f20" text-anchor="middle">⚙️</text>
+</svg>

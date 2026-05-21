@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="g5bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#b0ddf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g5bg)"/>
+  <circle cx="310" cy="60"  r="72" fill="#60b8e0" opacity="0.14"/>
+  <circle cx="82"  cy="242" r="60" fill="#c8ecf8"  opacity="0.2"/>
+  <!-- NenTang.vn platform mockup -->
+  <rect x="72" y="68"  width="256" height="162" rx="12" fill="white" opacity="0.92" stroke="#a0d8f0" stroke-width="1.5"/>
+  <rect x="72" y="68"  width="256" height="28"  rx="12" fill="#0078a8"/>
+  <rect x="72" y="84"  width="256" height="12"  fill="#0078a8"/>
+  <circle cx="91"  cy="82" r="4.5" fill="white" opacity="0.5"/>
+  <circle cx="105" cy="82" r="4.5" fill="white" opacity="0.5"/>
+  <!-- URL bar -->
+  <rect x="130" y="76" width="168" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+  <text x="214" y="86" font-family="Arial,sans-serif" font-size="7" fill="white" text-anchor="middle" opacity="0.9">nentang.vn</text>
+  <!-- Hero area -->
+  <rect x="86"  y="102" width="228" height="60" rx="6" fill="#e0f4ff"/>
+  <text x="200" y="128" font-family="Arial,sans-serif" font-size="12" fill="#0078a8" text-anchor="middle" font-weight="700">NenTang.vn</text>
+  <text x="200" y="145" font-family="Arial,sans-serif" font-size="7"  fill="#0078a8" text-anchor="middle">Nền tảng học tập trực tuyến</text>
+  <!-- Course cards -->
+  <rect x="86"  y="170" width="68"  height="48" rx="6" fill="#f0f9ff" stroke="#a0d8f0" stroke-width="1"/>
+  <rect x="164" y="170" width="68"  height="48" rx="6" fill="#f0f9ff" stroke="#a0d8f0" stroke-width="1"/>
+  <rect x="242" y="170" width="68"  height="48" rx="6" fill="#f0f9ff" stroke="#a0d8f0" stroke-width="1"/>
+  <text x="120" y="196" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">💻</text>
+  <text x="198" y="196" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">📱</text>
+  <text x="276" y="196" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">🎯</text>
+  <text x="200" y="258" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="14" fill="#0060a0" text-anchor="middle" font-weight="700">NenTang.vn Platform</text>
+  <text x="200" y="276" font-family="Arial,sans-serif" font-size="11" fill="#4090b8" text-anchor="middle">Hệ thống học tập trực tuyến</text>
+</svg>

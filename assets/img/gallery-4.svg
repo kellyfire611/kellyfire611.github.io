@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="g4bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8e0"/>
+      <stop offset="100%" stop-color="#ffe8a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g4bg)"/>
+  <circle cx="320" cy="58"  r="70" fill="#f0c040" opacity="0.15"/>
+  <circle cx="78"  cy="238" r="58" fill="#fff0b0"  opacity="0.2"/>
+  <!-- Presentation / award scene -->
+  <!-- Stage board -->
+  <rect x="85" y="72"  width="230" height="148" rx="12" fill="white" opacity="0.92" stroke="#f0d060" stroke-width="1.5"/>
+  <rect x="85" y="72"  width="230" height="30"  rx="12" fill="#b08800"/>
+  <rect x="85" y="90"  width="230" height="12"  fill="#b08800"/>
+  <!-- Stars -->
+  <text x="148" y="112" font-family="Arial,sans-serif" font-size="22" fill="#f0c040" text-anchor="middle">★</text>
+  <text x="200" y="112" font-family="Arial,sans-serif" font-size="22" fill="#f0c040" text-anchor="middle">★</text>
+  <text x="252" y="112" font-family="Arial,sans-serif" font-size="22" fill="#f0c040" text-anchor="middle">★</text>
+  <!-- Trophy -->
+  <text x="200" y="153" font-family="Arial,sans-serif" font-size="40" text-anchor="middle">🏅</text>
+  <rect x="115" y="164" width="170" height="7" rx="3" fill="#f0d060" opacity="0.5"/>
+  <rect x="130" y="176" width="140" height="5" rx="2" fill="#f0d060" opacity="0.4"/>
+  <rect x="140" y="186" width="120" height="5" rx="2" fill="#f0d060" opacity="0.3"/>
+  <text x="200" y="258" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="14" fill="#8a6800" text-anchor="middle" font-weight="700">Giải thưởng / Thành tích</text>
+  <text x="200" y="276" font-family="Arial,sans-serif" font-size="11" fill="#a08020" text-anchor="middle">Vinh danh xuất sắc</text>
+</svg>

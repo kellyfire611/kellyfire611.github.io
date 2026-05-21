@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" width="520" height="400">
+  <defs>
+    <linearGradient id="wsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff7f5"/>
+      <stop offset="100%" stop-color="#ffd6cc"/>
+    </linearGradient>
+    <linearGradient id="deskColor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f9dcc4"/>
+      <stop offset="100%" stop-color="#ffb4a2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="520" height="400" fill="url(#wsBg)" rx="20"/>
+  <circle cx="60"  cy="60"  r="40" fill="#ffb4a2" opacity="0.3"/>
+  <circle cx="460" cy="340" r="55" fill="#f9dcc4"  opacity="0.4"/>
+
+  <!-- Desk surface -->
+  <rect x="60"  y="290" width="400" height="18" rx="9"  fill="url(#deskColor)"/>
+  <rect x="90"  y="308" width="16"  height="60" rx="6"  fill="#f0c8a8"/>
+  <rect x="414" y="308" width="16"  height="60" rx="6"  fill="#f0c8a8"/>
+
+  <!-- Monitor stand -->
+  <rect x="238" y="265" width="44" height="25" rx="5" fill="#e0b898"/>
+  <rect x="220" y="288" width="80" height="8"  rx="4" fill="#d4a880"/>
+
+  <!-- Monitor frame -->
+  <rect x="120" y="85" width="280" height="180" rx="14" fill="#2d1a1a"/>
+  <rect x="128" y="93" width="264" height="164" rx="10" fill="#1a1025"/>
+
+  <!-- Screen glow -->
+  <rect x="130" y="95"  width="260" height="160" rx="9" fill="#1e1535" opacity="0.95"/>
+
+  <!-- Browser bar -->
+  <rect x="130" y="95"  width="260" height="22"  rx="9" fill="#2d2040"/>
+  <circle cx="146" cy="106" r="5"  fill="#ef6f6c" opacity="0.8"/>
+  <circle cx="162" cy="106" r="5"  fill="#ffb4a2" opacity="0.8"/>
+  <circle cx="178" cy="106" r="5"  fill="#f9dcc4" opacity="0.8"/>
+  <rect x="196" y="101" width="150" height="10" rx="5" fill="#3d3050"/>
+  <text x="271" y="109" font-family="monospace" font-size="6" fill="#b0a0c0" text-anchor="middle">nentang.vn</text>
+
+  <!-- Code lines -->
+  <rect x="142" y="128" width="50"  height="6"  rx="3" fill="#ef6f6c" opacity="0.85"/>
+  <rect x="142" y="142" width="90"  height="5"  rx="2.5" fill="#ffb4a2" opacity="0.7"/>
+  <rect x="152" y="154" width="70"  height="5"  rx="2.5" fill="#f9dcc4" opacity="0.8"/>
+  <rect x="152" y="166" width="100" height="5"  rx="2.5" fill="#7090e0" opacity="0.7"/>
+  <rect x="142" y="178" width="60"  height="5"  rx="2.5" fill="#ef6f6c" opacity="0.6"/>
+  <rect x="152" y="190" width="80"  height="5"  rx="2.5" fill="#a0e0a0" opacity="0.7"/>
+  <rect x="142" y="202" width="110" height="5"  rx="2.5" fill="#ffb4a2" opacity="0.6"/>
+  <rect x="152" y="214" width="55"  height="5"  rx="2.5" fill="#f9dcc4" opacity="0.75"/>
+  <rect x="152" y="226" width="95"  height="5"  rx="2.5" fill="#7090e0" opacity="0.6"/>
+  <rect x="142" y="238" width="40"  height="5"  rx="2.5" fill="#ef6f6c" opacity="0.7"/>
+
+  <!-- Cursor -->
+  <rect x="186" y="238" width="2"  height="9"  rx="1" fill="white" opacity="0.85"/>
+
+  <!-- Small book -->
+  <rect x="390" y="258" width="38" height="30" rx="3" fill="#ef6f6c"/>
+  <rect x="393" y="261" width="32" height="24" rx="2" fill="#d45956"/>
+  <line x1="409" y1="261" x2="409" y2="285" stroke="#ffb4a2" stroke-width="1.5"/>
+  <rect x="395" y="265" width="12" height="3"  rx="1.5" fill="#ffb4a2" opacity="0.6"/>
+  <rect x="395" y="271" width="10" height="3"  rx="1.5" fill="#ffb4a2" opacity="0.6"/>
+
+  <!-- Plant pot -->
+  <rect x="76" y="264" width="30" height="24" rx="3" fill="#f0a868"/>
+  <ellipse cx="91" cy="264" rx="16" ry="5" fill="#d4845a"/>
+  <path d="M91 264 Q85 244 78 236" stroke="#60a060" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="76" cy="235" rx="9"  ry="6"  fill="#70b870" transform="rotate(-20,76,235)"/>
+  <path d="M91 255 Q98 238 106 232" stroke="#60a060" stroke-width="3"  fill="none" stroke-linecap="round"/>
+  <ellipse cx="108" cy="231" rx="9" ry="6"  fill="#70b870" transform="rotate(20,108,231)"/>
+  <path d="M91 260 Q91 242 91 234"  stroke="#60a060" stroke-width="3"  fill="none" stroke-linecap="round"/>
+  <ellipse cx="91"  cy="232" rx="8"  ry="6"  fill="#80c880"/>
+
+  <!-- Decorative dots -->
+  <circle cx="88"  cy="350" r="4" fill="#ef6f6c" opacity="0.4"/>
+  <circle cx="432" cy="70"  r="6" fill="#ffb4a2" opacity="0.5"/>
+  <circle cx="470" cy="100" r="4" fill="#f9dcc4" opacity="0.6"/>
+  <text x="475" y="145" font-size="16" fill="#ffb4a2" opacity="0.6">✦</text>
+  <text x="52"  y="200" font-size="12" fill="#ef6f6c"  opacity="0.5">✦</text>
+</svg>
